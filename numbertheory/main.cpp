@@ -7,9 +7,20 @@
 //
 
 #include <iostream>
+#include "functions.h"
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    std::list<int> myList = pMinusOne(753, 753, 2);
+    std::list<int> solution = {3, 251};
+    for (auto v : myList)
+        cout << v << "\n";
+    if(myList == solution){
+        cout << "This function is working!\n";
+    }else{
+        cout << "Back to the drawing board :(\n";
+    }
     return 0;
 }
+
+
+
